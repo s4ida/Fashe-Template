@@ -1,0 +1,603 @@
+main #adddiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+main #adddiv .sortselectform {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  width: 700px;
+}
+main #adddiv .sortselectform .selectsort select {
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  padding: 13px;
+  border: none;
+  border: 1px solid #E4563B;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+main #adddiv .sortselectform .selectsort select:hover {
+  background-color: #E4563B;
+  color: white;
+  transition: 0.3s;
+  border: 1px solid white;
+}
+main #adddiv .sortselectform .selectsort form input {
+  border: none;
+  border: 1px solid #E4563B;
+  padding: 13px;
+  outline: none;
+  border-radius: 30px;
+}
+main #adddiv .sortselectform .selectsort form button {
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  padding: 13px;
+  border: none;
+  border: 1px solid #E4563B;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+main #adddiv .sortselectform .selectsort form button:hover {
+  background-color: #E4563B;
+  color: white;
+  transition: 0.3s;
+  border: 1px solid white;
+}
+main #adddiv .sortselectform .post form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main #adddiv .sortselectform .post form input {
+  border: none;
+  border: 1px solid #E4563B;
+  padding: 13px;
+  outline: none;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+main #adddiv .sortselectform .post form button {
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  padding: 13px;
+  border: none;
+  border: 1px solid #E4563B;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  width: 120px;
+}
+main #adddiv .sortselectform .post form button:hover {
+  background-color: #E4563B;
+  color: white;
+  transition: 0.3s;
+  border: 1px solid white;
+}
+main #adddiv #table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 700px;
+}
+main #adddiv tr {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+main #adddiv tr button {
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  padding: 13px;
+  border: none;
+  border: 1px solid #E4563B;
+}
+main #adddiv tr button:hover {
+  background-color: #E4563B;
+  color: white;
+  transition: 0.3s;
+  border: 1px solid white;
+}
+main #adddiv tr img {
+  width: 60px;
+  height: 60px;
+}
+main #adddiv td {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main #wishlistdiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+main #wishlistdiv .box {
+  color: #868686;
+  text-align: center;
+}
+main #wishlistdiv .box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+main #wishlistdiv .box .btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+main #wishlistdiv .box .btns button {
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  padding: 13px;
+  border: none;
+  border: 1px solid #E4563B;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+main #wishlistdiv .box .btns button:hover {
+  background-color: #E4563B;
+  color: white;
+  transition: 0.3s;
+  border: 1px solid white;
+}
+
+main #basketdiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+main #basketdiv .box {
+  color: #868686;
+  text-align: center;
+}
+main #basketdiv .box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+main #basketdiv .box .btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+main #basketdiv .box .btns button {
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  padding: 13px;
+  border: none;
+  border: 1px solid #E4563B;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+main #basketdiv .box .btns button:hover {
+  background-color: #E4563B;
+  color: white;
+  transition: 0.3s;
+  border: 1px solid white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+}
+header .headercontainer {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .headercontainer .dropdown {
+  display: none;
+}
+header .headercontainer .dropdown button {
+  width: 160px;
+  background-color: red;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-weight: bolder;
+  outline: none;
+}
+header .headercontainer .headerimg img {
+  width: 100%;
+}
+header .headercontainer .navdiv {
+  display: flex;
+  gap: 40px;
+}
+header .headercontainer .navdiv a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+header .headercontainer .navdiv a:hover {
+  color: #E4563B;
+}
+header .headercontainer .iconsdiv {
+  display: flex;
+  gap: 40px;
+}
+header .headercontainer .iconsdiv i {
+  color: black;
+}
+
+main #entrancesection {
+  background-image: url(/assets/img/master-slide-04.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+main #entrancesection .container {
+  width: 95%;
+}
+main #entrancesection .container .textdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #entrancesection .container .textdiv h3 {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+main #entrancesection .container .textdiv h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: white;
+}
+main #entrancesection .container .textdiv button {
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  padding: 13px;
+  border: none;
+  width: 18%;
+  border-radius: 30px;
+}
+main #entrancesection .container .textdiv button:hover {
+  background-color: #E4563B;
+  color: white;
+  transition: 0.3s;
+}
+main #products {
+  width: 100%;
+  margin-bottom: 30px;
+}
+main #products .container {
+  width: 95%;
+}
+main #products .container .titlediv {
+  text-align: center;
+  padding-top: 30px;
+}
+main #products .container .titlediv h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+}
+main #products .container #apidiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+main #products .container #apidiv .box {
+  color: #868686;
+  text-align: center;
+}
+main #products .container #apidiv .box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+main #products .container #apidiv .box .btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+main #products .container #apidiv .box .btns button {
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  padding: 13px;
+  border: none;
+  border: 1px solid #E4563B;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+main #products .container #apidiv .box .btns button:hover {
+  background-color: #E4563B;
+  color: white;
+  transition: 0.3s;
+  border: 1px solid white;
+}
+main #lookbook {
+  width: 100%;
+  background-color: #F2F2F2;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+main #lookbook .container {
+  width: 95%;
+}
+main #lookbook .container .row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main #lookbook .container .row .imgdiv {
+  background-image: url(/assets/img/banner-08.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+main #lookbook .container .row .imgdiv h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+main #lookbook .container .row .imgdiv h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+main #lookbook .container .row .imgdiv h4 {
+  font-size: 15px;
+  font-weight: 400;
+}
+main #lookbook .container .row .shopitem {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-image: url(/assets/img/shop-item-09.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main #lookbook .container .row .shopitem h3 {
+  color: black;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+main #lookbook .container .row .shopitem p {
+  color: black;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+main #lookbook .container .row .shopitem p span {
+  color: #E4563B;
+}
+main #lookbook .container .row .shopitem .timediv {
+  display: flex;
+  gap: 10px;
+}
+main #lookbook .container .row .shopitem .timediv p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid gray;
+  padding: 10px;
+}
+main #lookbook .container .row .shopitem .timediv p span {
+  color: gray;
+}
+main #blog {
+  width: 100%;
+  margin-top: 30px;
+}
+main #blog .container {
+  width: 95%;
+}
+main #blog .container .title {
+  text-align: center;
+}
+main #blog .container .title h1 {
+  font-weight: bolder;
+}
+main #blog .container .row .blogdiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+main #blog .container .row .blogdiv h1 {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 400;
+}
+main #blog .container .row .blogdiv p {
+  font-size: 14px;
+  color: gray;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+main #blog .container .row .blogdiv img {
+  width: 100%;
+}
+main #follow {
+  width: 100%;
+}
+main #follow .titlediv {
+  text-align: center;
+  margin-bottom: 30px;
+}
+main #follow .titlediv h1 {
+  font-weight: bolder;
+}
+main #follow .row {
+  --bs-gutter-x: 0rem;
+}
+main #follow .row .followdiv {
+  background-image: url(/assets/img/gallery-03.jpg);
+  background-size: cover;
+}
+main #follow .row .followdiv .textfollow {
+  background-color: black;
+  visibility: hidden;
+  opacity: 0.7;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+main #follow .row .followdiv:hover .textfollow {
+  visibility: visible;
+}
+main #aboutsection {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+main #aboutsection .container {
+  width: 95%;
+}
+main #aboutsection .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #aboutsection .container .row .about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  border-right: 1px solid gray;
+}
+main #aboutsection .container .row .about h1 {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+main #aboutsection .container .row .about p {
+  font-size: 13px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #F0F0F0;
+  padding-top: 30px;
+}
+footer .container {
+  width: 95%;
+}
+footer .container .row .footerdiv {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+footer .container .row .footerdiv h1 {
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+}
+footer .container .row .footerdiv p {
+  color: #868686;
+}
+footer .container .row .footerdiv .socialdiv {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+  color: #868686;
+}
+footer .container .row .ulsdiv {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 15px;
+}
+footer .container .row .ulsdiv h1 {
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+}
+footer .container .row .ulsdiv ul {
+  color: #868686;
+  padding-left: 0px;
+  list-style: none;
+}
+footer .container .row .newsletter {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+footer .container .row .newsletter h1 {
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+}
+footer .container .row .newsletter input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
+}
+footer .container .row .newsletter button {
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  padding: 13px;
+  width: 60%;
+  border: none;
+  border-radius: 30px;
+}
+footer .container .row .newsletter button:hover {
+  background-color: #E4563B;
+  color: white;
+  transition: 0.3s;
+}
+footer .foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #868686;
+}
+footer .foot img {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  header .headercontainer .navdiv {
+    display: none;
+  }
+  header .headercontainer .iconsdiv {
+    display: none;
+  }
+  header .headercontainer .dropdown {
+    display: block;
+  }
+}

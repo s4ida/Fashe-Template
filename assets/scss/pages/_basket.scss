@@ -1,0 +1,35 @@
+main{
+    #basketdiv{
+        display: flex;
+        flex-wrap: wrap;
+        .box{
+            img{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            color: #868686;
+            text-align: center;
+        .btns{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            button{
+                background-color: white;
+                color: black;
+                font-weight: 400;
+              padding: 13px;
+              border: none;
+              border: 1px solid $main-color;
+border-radius: 30px;
+margin-bottom: 30px;
+            }
+            button:hover{
+                background-color: $main-color;
+                color: white;
+                transition: 0.3s;
+                border: 1px solid white;
+            }
+        }
+        }
+    }
+}
